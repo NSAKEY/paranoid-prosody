@@ -19,8 +19,8 @@ paranoid-prosody-bootstrap does this:
 To use it, set up a new Debian or Ubuntu server, SSH into it, switch to the root user, and:
 
 ```sh
-git clone https://github.com/NSAKEY/paranoid-prosody-bootstrap.git
-cd paranoid-prosody-bootstrap
+git clone https://github.com/NSAKEY/paranoid-prosody.git
+cd paranoid-prosody
 ./bootstrap.sh
 ```
 
