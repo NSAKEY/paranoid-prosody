@@ -1,4 +1,4 @@
-tor-bridge-bootstrap
+paranoid-prosody
 ===================
 
 This script is a fork of https://github.com/micahflee/tor-relay-bootstrap. It has been modified to install Prosody (An XMPP server) and to set up Tor to provide a hidden service for Prosody.
