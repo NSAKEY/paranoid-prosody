@@ -108,6 +108,7 @@ c2s_require_encryption = true
 -- For more information see http://prosody.im/doc/s2s#security
 
 s2s_secure_auth = true
+s2s_require_encryption = true
 
 -- Many servers don't support encryption or have invalid or self-signed
 -- certificates. You can list domains here that will not be required to
