@@ -1,0 +1,36 @@
+# Last Modified: Thu Aug 28 15:44:30 2014
+# This AppArmor profile was acquired by searching for "apparmor prosody" on Google.
+# It passes the "works on my machine" test in enforce mode, but I make no guarantees that it will work for you.
+# Source: https://groups.google.com/forum/#!topic/prosody-dev/3XDOEbwmyC4
+
+#include <tunables/global>
+
+/usr/bin/prosody {
+  #include <abstractions/base>
+
+  network inet stream,
+  network inet dgram,
+  network inet6 stream,
+  network inet6 dgram,
+    
+  capability dac_override,
+  capability dac_read_search,
+   
+  /etc/resolv.conf r, 
+  /etc/prosody/** r,
+  
+#  /var/log/prosody/* wr,
+  
+  /usr/lib/prosody/** m,
+  /var/lib/prosody/** rw,
+    
+  /{,var/}run/prosody/* rwk,  
+  
+  /usr/share/lua/** r,
+  /usr/share/ca-certificates/** r,
+  
+  /usr/bin/lua5.1 ix,
+  /usr/bin/prosody r,
+
+}
+

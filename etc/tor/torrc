@@ -1,0 +1,27 @@
+HiddenServiceDir /var/lib/tor/xmpp/  
+HiddenServicePort 5222 127.0.0.1:5222
+
+# Uncomment the next 3 lines if you want to set up SSH as an authenticated hidden service:
+ 
+#HiddenServiceDir /var/lib/tor/ssh/
+#HiddenServicePort 22 127.0.0.1:22  
+#HiddenServiceAuthorizeClient stealth ssh
+
+# If you do this, you will only be able to use your SSH onion address if you add the
+# HidServAuth option to the torrc file on your local machine. You need to run this  
+# command after uncommenting the above lines and reloading tor:
+
+# cat /var/lib/tor/ssh/hostname
+
+# Your output will look something like this:
+
+# 'examplexxxxxxxxx.onion 0nFkc5iGHR1DR7ijcbHgZL # client: ssh'
+
+# Take that output and open up the torrc on your local machine in a text
+# editor. Add this to the end of your torrc:   
+
+# HidServAuth examplexxxxxxxxx.onion 0nFkc5iGHR1DR7ijcbHgZL
+
+# For extra Zen points, bind SSH to 127.0.0.1 and restart it after you've confirmed
+# that your authenticated hidden service works.
+
