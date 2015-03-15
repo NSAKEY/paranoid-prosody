@@ -8,7 +8,7 @@ This is a script to bootstrap a Debian server to be a set-and-forget Tor bridge.
 paranoid-prosody-bootstrap does this:
 
 * Upgrades all the software on the system
-* Adds the deb.torproject.org and the http://packages.prosody.im/debian repositories to apt, so Prosody and Tor updates come directly from the source.
+* Adds the deb.torproject.org and the packages.prosody.im/debian repositories to apt, so Prosody and Tor updates come directly from the source.
 * Installs and configures Prosody with reasonably paranoid defaults.
 * Installs and configures Tor to be a hidden service for Prosody (You can also manually edit torrc to make SSH an authenticated hidden service)
 * Configures sane default firewall rules
