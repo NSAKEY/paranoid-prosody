@@ -3,9 +3,9 @@ paranoid-prosody
 
 This script is a fork of https://github.com/micahflee/tor-relay-bootstrap. It has been modified to install Prosody (An XMPP server) and to set up Tor to provide a hidden service for Prosody.
 
-This is a script to bootstrap a Debian server to be a set-and-forget Tor bridge. It's been tested on Debian Wheezy and Ubuntu 14.04, and should work on any maintained version of those two distros.
+This is a script to bootstrap a Debian/Ubuntu server to be a set-and-forget Prosody server . It's been tested on Debian Wheezy and Ubuntu 14.04, and should work on any other maintained version of those two distros.
 
-paranoid-prosody-bootstrap does this:
+paranoid-prosody does this:
 
 * Upgrades all the software on the system
 * Adds the deb.torproject.org and the packages.prosody.im/debian repositories to apt, so Prosody and Tor updates come directly from the source.
