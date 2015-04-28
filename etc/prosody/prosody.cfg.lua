@@ -93,7 +93,7 @@ ssl = {
         certificate = "/etc/prosody/certs/example.crt";
         dhparam = "/etc/prosody/certs/dh-2048.pem";
         options = { "no_sslv2", "no_sslv3", "no_tlsv1", "no_tlsv1_1", "cipher_server_preference"};
-        ciphers = "HIGH+kEDH:HIGH+kEECDH:!PSK:!SRP:!3DES:!aNULL:!AES128:!CAMELLIA128:!SHA";
+        ciphers = "HIGH+kEECDH:HIGH+kEDH:!PSK:!SRP:!3DES:!aNULL:!AES128:!CAMELLIA128:!SHA";
 
 }
 
