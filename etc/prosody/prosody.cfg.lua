@@ -94,7 +94,7 @@ ssl = {
         dhparam = "/etc/prosody/certs/dhparam.pem";
         options = { "no_sslv2", "no_sslv3", "no_tlsv1", "no_tlsv1_1", "cipher_server_preference"};
         ciphers = "HIGH+kEECDH:HIGH+kEDH:!PSK:!SRP:!3DES:!aNULL:!AES128:!CAMELLIA128:!SHA";
-
+        curve = "secp256k1";
 }
 
 -- Force clients to use encrypted connections? This option will
